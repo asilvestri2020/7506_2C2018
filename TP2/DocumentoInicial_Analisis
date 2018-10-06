@@ -1,0 +1,23 @@
+=======================================================================================
+Documento Inicial para el Trabajo Práctoco 2 (Organización de Datos 2do. cuatrimestre)
+=======================================================================================
+
+En primera instancia tenemos dos .csv de los cuales uno es el mismo que usamos para el trabajo práctico 1, pero con mayor cantidad de datos.
+Por otro lado tenemos un archivo para realizar el test/entrenamiento, esto es de la siguiente manera del primer archivo hay una X cantidad de usuarios mientras que en el segundo tendremos una cantidad Y de usuarios (mucho menor) que nos indica si ese usuario llevó a cabo una conversion lo que indica que efectivamente realizó una compra.
+Nosotros tendremos que formateara los datos del primer .csv y aplicarle varios algoritmos de machine learning para tratar de predecir si ese usuario en cuesitón termina haciendo una conversión o no, lo que nos van a brindar los algoritmos es un porcentaje, a decir, el usuario 1 tiene un 0.85 que indica que está muy cerca de hacer una conversión en ese período de tiempo.
+
+Sobre lo que podemos ir haciendo por ahora (independientemente de si tenemos que reentregar o no el ptimer tp) es lo siguiente:
+- Necesitamos agrupar de manera que haya un solo registro fila por usuario.
+- Agregar una cierta cantidad de features (columnas) con valores booleanos que nos indica si el usuario en cuestión cumple con ese característica.
+- Cuantas más columnas y datos mas limpios tengamos mejor, de poco nos sirve tener columnas con texto o cosas por el estilo, para esto también requiere usar un poco la imaginación, a continuación doy unos ejemplos de lo que se me fue ocurriendo:
+
+* Una columna por cada evento, a saber si el usuario hizo o no tal o cual evento.
+* Una columna por cada día de la semana junto a un evento. por ejemplo LU_CONV, MAR_CONV, MIER_CONV, LUN_CHECKOUT, MAR_CHECKOUT (al menos para los eventos mas relevantes con respecto a una compra)
+* Separar el horario de la columna timestamp en franjas horarias, por ejemplo 24/6 = 4 horas con 6 franjas, y asociarla al evento de conversión, al estilo CONV_0004, CONV_0408, CONV_0812.
+* Una columna por cada marca y si el usuario compro o no, hizo checkout o no (al menos para las marcas principales)
+* Una columna por cada estado del producto, nuevo, muy bueno, bueno, etc, en realción a si el usuario compro o al menos llegó a checkout.
+* Llevar algún tipo de trabajo sobre las regiones, quizás se puede tomar las regiones más importantes y hacer algo similar a lo que comenté sobre las marcas.
+* Sobre el tipo de búsquedas que hizo, se puede analizar algo para esto.
+* También se puede pensar algunas columnas como cantidades y no solo como booleanas, a esto viene una chance de pensar que si un usuario compra o hace tal o cual cosa muy seguido es más proclive que aquel que no hace nada, por ejemplo cantidad de checkouts, etc.
+
+=======================================================================================
