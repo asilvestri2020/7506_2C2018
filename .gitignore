@@ -104,3 +104,7 @@ venv.bak/
 .mypy_cache/
 
 *.csv
+
+TP1/\.DS_Store
+
+TP1/Reentrega/\.DS_Store
