@@ -1,0 +1,12 @@
+1
+ a)  	La fila 2 es Formosa. 
+2
+ a)  	La relación mas debil se da entre la columnas 3 y 4. 
+3
+  b)  	[.702, -.702, .117] 
+4
+ b)  	Reducimos las dimensiones de un set de datos usando SVD, si agregamos ahora un nuevo punto "x" podemos representarlo calculando xV'S^-1. 
+5
+ b)  	Los dos usuarios mas similares son el 5 y el 3. 
+6
+b)  	El vector principal de la base es [-0.77,-0.45,-0.25,-0.36]
